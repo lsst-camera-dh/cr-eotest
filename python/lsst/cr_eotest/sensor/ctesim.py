@@ -6,7 +6,7 @@ from __future__ import absolute_import
 import numpy as np
 import astropy.io.fits as fits
 import lsst.afw.image as afwImage
-import lsst\.cr_eotest\.image_utils as imutils
+import lsst.cr_eotest.image_utils as imutils
 from .AmplifierGeometry import makeAmplifierGeometry
 from .cte_matrix import cte_matrix
 from . import sim_tools

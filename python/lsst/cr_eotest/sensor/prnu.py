@@ -9,7 +9,7 @@ from __future__ import print_function
 from __future__ import absolute_import
 import os
 import numpy as np
-import lsst\.cr_eotest\.image_utils as imutils
+import lsst.cr_eotest.image_utils as imutils
 from .MaskedCCD import MaskedCCD
 import lsst.afw.image as afwImage
 import lsst.afw.math as afwMath

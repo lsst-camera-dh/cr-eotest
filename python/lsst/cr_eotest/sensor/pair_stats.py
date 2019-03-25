@@ -12,7 +12,7 @@ import numpy as np
 import lsst.afw.image as afwImage
 import lsst.afw.math as afwMath
 from .MaskedCCD import MaskedCCD
-import lsst\.cr_eotest\.image_utils as imutils
+import lsst.cr_eotest.image_utils as imutils
 
 
 class PairStats(object):
@@ -97,7 +97,7 @@ def pair_stats(ccd1, ccd2, amp, mask_files=(), binsize=1, bias_frame=None):
 
 
 if __name__ == '__main__':
-    from lsst\.cr_eotest\.sensor.sim_tools import simulateFlat
+    from lsst.cr_eotest.sensor.sim_tools import simulateFlat
 
     datadir = '/nfs/slac/g/ki/ki18/jchiang/LSST/SensorTests/test_scripts/work/sensorData/000-00/flat/debug'
 

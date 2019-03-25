@@ -11,7 +11,7 @@ import numpy as np
 import warnings
 import itertools
 import astropy.io.fits as fits
-from lsst\.cr_eotest\.fitsTools import fitsTableFactory, fitsWriteto
+from lsst.cr_eotest.fitsTools import fitsTableFactory, fitsWriteto
 import scipy.optimize
 from scipy.special import erf, gammaincc
 
@@ -19,7 +19,7 @@ import lsst.afw.detection as afwDetect
 import lsst.afw.image as afwImage
 import lsst.afw.math as afwMath
 
-import lsst\.cr_eotest\.image_utils as imutils
+import lsst.cr_eotest.image_utils as imutils
 from .MaskedCCD import MaskedCCD, MaskedCCDBiasImageException
 
 import pdb

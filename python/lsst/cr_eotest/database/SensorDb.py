@@ -6,7 +6,7 @@
 from __future__ import print_function
 from __future__ import absolute_import
 from builtins import object
-import lsst\.cr_eotest\.image_utils as imutils
+import lsst.cr_eotest.image_utils as imutils
 from .MySQL_Database import Database
 
 

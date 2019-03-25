@@ -10,9 +10,9 @@ import numpy as np
 import astropy.io.fits as fits
 import matplotlib
 import matplotlib.pyplot as plt
-import lsst\.cr_eotest\.image_utils as imutils
-import lsst\.cr_eotest\.sensor as sensorTest
-from lsst\.cr_eotest\.sensor.EOTestPlots import cmap_range
+import lsst.cr_eotest.image_utils as imutils
+import lsst.cr_eotest.sensor as sensorTest
+from lsst.cr_eotest.sensor.EOTestPlots import cmap_range
 
 __all__ = ['RaftMosaic']
 

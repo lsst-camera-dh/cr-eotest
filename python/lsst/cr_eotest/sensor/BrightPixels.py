@@ -7,13 +7,13 @@ from __future__ import absolute_import
 import os
 import numpy as np
 import astropy.io.fits as fits
-from lsst\.cr_eotest\.fitsTools import fitsWriteto
+from lsst.cr_eotest.fitsTools import fitsWriteto
 
 import lsst.afw.detection as afwDetect
 import lsst.afw.image as afwImage
 import lsst.daf.base as dafBase
 
-import lsst\.cr_eotest\.image_utils as imutils
+import lsst.cr_eotest.image_utils as imutils
 from .MaskedCCD import MaskedCCD
 from .AmplifierGeometry import makeAmplifierGeometry
 from .fits_headers import fits_headers

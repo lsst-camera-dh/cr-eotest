@@ -7,12 +7,12 @@ from __future__ import absolute_import
 import os
 import numpy as np
 import astropy.io.fits as fits
-from lsst\.cr_eotest\.fitsTools import fitsTableFactory, fitsWriteto
+from lsst.cr_eotest.fitsTools import fitsTableFactory, fitsWriteto
 import lsst.afw.detection as afwDetect
 import lsst.afw.geom as afwGeom
 import lsst.afw.image as afwImage
 import lsst.afw.math as afwMath
-import lsst\.cr_eotest\.image_utils as imutils
+import lsst.cr_eotest.image_utils as imutils
 from .MaskedCCD import MaskedCCD
 from .TrapFinder import TrapFinder
 

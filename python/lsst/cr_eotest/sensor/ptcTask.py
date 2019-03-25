@@ -11,8 +11,8 @@ import operator
 import numpy as np
 import scipy.optimize
 import astropy.io.fits as fits
-from lsst\.cr_eotest\.fitsTools import fitsTableFactory, fitsWriteto
-import lsst\.cr_eotest\.image_utils as imutils
+from lsst.cr_eotest.fitsTools import fitsTableFactory, fitsWriteto
+import lsst.cr_eotest.image_utils as imutils
 from .MaskedCCD import MaskedCCD
 from .EOTestResults import EOTestResults
 

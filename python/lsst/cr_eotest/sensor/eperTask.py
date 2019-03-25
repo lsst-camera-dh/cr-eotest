@@ -14,8 +14,8 @@ import lsst.afw.geom as afwGeom
 import lsst.afw.image as afwImage
 import lsst.afw.math as afwMath
 
-import lsst\.cr_eotest\.image_utils as imutils
-from lsst\.cr_eotest\.Estimator import Estimator
+import lsst.cr_eotest.image_utils as imutils
+from lsst.cr_eotest.Estimator import Estimator
 from .AmplifierGeometry import makeAmplifierGeometry
 
 

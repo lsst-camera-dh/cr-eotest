@@ -2,7 +2,7 @@
 Data and tools to generate simulation input for multiaggressor crosstalk
 pattern.
 """
-import lsst\.cr_eotest\.image_utils as imutils
+import lsst.cr_eotest.image_utils as imutils
 
 _xpos = [3856, 3364, 2872, 2380, 1888, 1396, 904, 412,
          260, 792, 1324, 1856, 2388, 2920, 3452, 3984]

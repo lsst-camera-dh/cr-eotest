@@ -9,7 +9,7 @@ bright column is specified via the --colthresh option.
 """
 import os
 
-import lsst\.cr_eotest\.image_utils as imutils
+import lsst.cr_eotest.image_utils as imutils
 from .MaskedCCD import MaskedCCD
 from .BrightPixels import BrightPixels
 from .EOTestResults import EOTestResults

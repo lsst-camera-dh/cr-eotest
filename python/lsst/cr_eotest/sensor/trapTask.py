@@ -5,7 +5,7 @@
 """
 from __future__ import absolute_import, print_function
 import os
-import lsst\.cr_eotest\.image_utils as imutils
+import lsst.cr_eotest.image_utils as imutils
 from .MaskedCCD import MaskedCCD
 from .EOTestResults import EOTestResults
 from .Traps import Traps

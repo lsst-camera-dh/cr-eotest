@@ -10,7 +10,7 @@ import sys
 import numpy as np
 import astropy.io.fits as fits
 from collections import OrderedDict
-import lsst\.cr_eotest\.image_utils as imutils
+import lsst.cr_eotest.image_utils as imutils
 from .AmplifierGeometry import parse_geom_kwd
 
 _module_path = os.environ['EOTEST_DIR']

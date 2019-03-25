@@ -9,7 +9,7 @@ from __future__ import absolute_import
 import os
 import numpy as np
 import astropy.io.fits as fits
-import lsst\.cr_eotest\.image_utils as imutils
+import lsst.cr_eotest.image_utils as imutils
 from .fe55_psf import PsfGaussFit, psf_sigma_statistics
 from .MaskedCCD import MaskedCCD
 from .EOTestResults import EOTestResults

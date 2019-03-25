@@ -7,7 +7,7 @@ from __future__ import print_function
 from __future__ import absolute_import
 import numpy as np
 import numpy.random as random
-import lsst\.cr_eotest\.image_utils as imutils
+import lsst.cr_eotest.image_utils as imutils
 import lsst.afw.geom as afwGeom
 import lsst.afw.image as afwImage
 import lsst.pex.exceptions as pexExcept

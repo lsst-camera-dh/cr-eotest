@@ -12,12 +12,12 @@ import os
 import tempfile
 import numpy as np
 import astropy.io.fits as fits
-from lsst\.cr_eotest\.fitsTools import fitsWriteto
+from lsst.cr_eotest.fitsTools import fitsWriteto
 import lsst.afw.detection as afwDetect
 import lsst.afw.geom as afwGeom
 import lsst.afw.image as afwImage
 import lsst.daf.base as dafBase
-import lsst\.cr_eotest\.image_utils as imutils
+import lsst.cr_eotest.image_utils as imutils
 from .MaskedCCD import MaskedCCD
 from .AmplifierGeometry import makeAmplifierGeometry, amp_loc
 from .BrightPixels import BrightPixels

@@ -12,13 +12,13 @@ import astropy.time
 import numpy as np
 import numpy.random as random
 import astropy.io.fits as fits
-from lsst\.cr_eotest\.fitsTools import fitsWriteto
+from lsst.cr_eotest.fitsTools import fitsWriteto
 
 import lsst.afw.geom as afwGeom
 import lsst.afw.image as afwImage
 import lsst.afw.display.ds9 as ds9
 
-import lsst\.cr_eotest\.image_utils as imutils
+import lsst.cr_eotest.image_utils as imutils
 from .fe55_yield import Fe55Yield
 from .fits_headers import fits_headers
 from .AmplifierGeometry import AmplifierGeometry

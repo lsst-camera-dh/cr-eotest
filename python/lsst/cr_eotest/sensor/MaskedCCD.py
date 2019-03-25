@@ -8,7 +8,7 @@ afwMath.makeStatistics object.
 from __future__ import print_function
 from __future__ import absolute_import
 import astropy.io.fits as fits
-from lsst\.cr_eotest\.fitsTools import fitsWriteto
+from lsst.cr_eotest.fitsTools import fitsWriteto
 from .AmplifierGeometry import makeAmplifierGeometry
 import lsst.daf.base as dafBase
 import lsst.afw
@@ -17,7 +17,7 @@ import lsst.afw.image as afwImage
 import lsst.afw.math as afwMath
 import lsst.ip.isr as ipIsr
 import lsst.pex.exceptions as pexExcept
-import lsst\.cr_eotest\.image_utils as imutils
+import lsst.cr_eotest.image_utils as imutils
 
 try:
     afwImage_Mask = afwImage.Mask

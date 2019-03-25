@@ -9,7 +9,7 @@ rolloff/blooming stop areas.
 """
 import os
 
-import lsst\.cr_eotest\.image_utils as imutils
+import lsst.cr_eotest.image_utils as imutils
 from .MaskedCCD import MaskedCCD
 from .DarkPixels import DarkPixels
 from .EOTestResults import EOTestResults

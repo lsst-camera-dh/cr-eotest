@@ -12,8 +12,8 @@ import glob
 from collections import OrderedDict
 import numpy as np
 import astropy.io.fits as fits
-from lsst\.cr_eotest\.fitsTools import fitsTableFactory, fitsWriteto
-import lsst\.cr_eotest\.image_utils as imutils
+from lsst.cr_eotest.fitsTools import fitsTableFactory, fitsWriteto
+import lsst.cr_eotest.image_utils as imutils
 from . import pylab_plotter as plot
 from .MaskedCCD import MaskedCCD
 from .PhotodiodeResponse import PhotodiodeResponse, CcdIllumination, \

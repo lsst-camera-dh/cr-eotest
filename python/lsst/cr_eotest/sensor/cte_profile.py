@@ -7,7 +7,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from . import pylab_plotter as plot
 import lsst.afw.math as afwMath
-from lsst\.cr_eotest\.Estimator import Estimator
+from lsst.cr_eotest.Estimator import Estimator
 
 __all__ = ['bias_estimate', 'cte_profile']
 

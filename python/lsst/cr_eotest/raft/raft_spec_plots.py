@@ -7,7 +7,7 @@ from collections import OrderedDict
 import cycler
 import numpy as np
 import matplotlib.pyplot as plt
-import lsst\.cr_eotest\.sensor as sensorTest
+import lsst.cr_eotest.sensor as sensorTest
 
 __all__ = ['RaftSpecPlots']
 

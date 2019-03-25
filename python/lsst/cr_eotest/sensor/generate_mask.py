@@ -9,8 +9,8 @@ import astropy.io.fits as fits
 import lsst.afw.detection as afwDetect
 import lsst.afw.image as afwImage
 import lsst.daf.base as dafBase
-from lsst\.cr_eotest\.fitsTools import fitsWriteto
-import lsst\.cr_eotest\.image_utils as imutils
+from lsst.cr_eotest.fitsTools import fitsWriteto
+import lsst.cr_eotest.image_utils as imutils
 from .AmplifierGeometry import makeAmplifierGeometry
 from .MaskedCCD import MaskedCCD
 from .sim_tools import CCD

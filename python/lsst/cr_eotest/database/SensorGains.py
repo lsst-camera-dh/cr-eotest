@@ -8,7 +8,7 @@ from __future__ import print_function
 from __future__ import absolute_import
 from builtins import zip
 import os
-import lsst\.cr_eotest\.image_utils as imutils
+import lsst.cr_eotest.image_utils as imutils
 from .SensorDb import SensorDb
 
 

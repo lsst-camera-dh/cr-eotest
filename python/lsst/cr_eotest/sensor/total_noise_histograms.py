@@ -6,7 +6,7 @@ from __future__ import absolute_import
 import numpy as np
 import matplotlib.pyplot as plt
 import lsst.afw.math as afwMath
-import lsst\.cr_eotest\.image_utils as imutils
+import lsst.cr_eotest.image_utils as imutils
 
 __all__ = ['total_noise_histograms']
 

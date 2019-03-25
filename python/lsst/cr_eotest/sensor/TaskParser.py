@@ -10,7 +10,7 @@ import glob
 import argparse
 import astropy.io.fits as fits
 import lsst.afw.image as afwImage
-import lsst\.cr_eotest\.image_utils as imutils
+import lsst.cr_eotest.image_utils as imutils
 from .rolloff_mask import rolloff_mask
 from .EOTestResults import EOTestResults
 

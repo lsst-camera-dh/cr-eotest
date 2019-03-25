@@ -10,13 +10,13 @@ import time
 import copy
 import numpy as np
 import astropy.io.fits as fits
-from lsst\.cr_eotest\.fitsTools import fitsWriteto
+from lsst.cr_eotest.fitsTools import fitsWriteto
 import pylab
 from . import pylab_plotter as plot
 import lsst.afw.detection as afwDetect
 import lsst.afw.geom as afwGeom
 import lsst.afw.math as afwMath
-import lsst\.cr_eotest\.image_utils as imutils
+import lsst.cr_eotest.image_utils as imutils
 from .MaskedCCD import MaskedCCD
 from .BrightPixels import BrightPixels
 

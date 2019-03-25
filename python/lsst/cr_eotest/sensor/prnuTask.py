@@ -8,8 +8,8 @@ import os
 from collections import OrderedDict
 import numpy as np
 import astropy.io.fits as fits
-from lsst\.cr_eotest\.fitsTools import fitsTableFactory, fitsWriteto
-import lsst\.cr_eotest\.image_utils as imutils
+from lsst.cr_eotest.fitsTools import fitsTableFactory, fitsWriteto
+import lsst.cr_eotest.image_utils as imutils
 from .prnu import prnu
 import lsst.afw.image as afwImage
 import lsst.pex.config as pexConfig

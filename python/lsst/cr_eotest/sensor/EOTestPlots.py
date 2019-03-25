@@ -17,8 +17,8 @@ import matplotlib.pyplot as plt
 import lsst.afw.image as afwImage
 import lsst.afw.math as afwMath
 import lsst.afw.display.ds9 as ds9
-import lsst\.cr_eotest\.image_utils as imutils
-from lsst\.cr_eotest\.Estimator import Estimator
+import lsst.cr_eotest.image_utils as imutils
+from lsst.cr_eotest.Estimator import Estimator
 from . import pylab_plotter as plot
 from .MaskedCCD import MaskedCCD
 from .EOTestResults import EOTestResults

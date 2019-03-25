@@ -7,8 +7,8 @@ from __future__ import absolute_import
 import os
 import numpy as np
 import astropy.io.fits as fits
-from lsst\.cr_eotest\.fitsTools import fitsWriteto
-import lsst\.cr_eotest\.image_utils as imutils
+from lsst.cr_eotest.fitsTools import fitsWriteto
+import lsst.cr_eotest.image_utils as imutils
 from .AmplifierGeometry import makeAmplifierGeometry
 from .EOTestResults import EOTestResults
 from .eperTask import EPERTask

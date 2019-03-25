@@ -9,8 +9,8 @@ from __future__ import absolute_import
 import os
 import numpy as np
 import astropy.io.fits as fits
-from lsst\.cr_eotest\.fitsTools import fitsTableFactory, fitsWriteto
-import lsst\.cr_eotest\.image_utils as imutils
+from lsst.cr_eotest.fitsTools import fitsTableFactory, fitsWriteto
+import lsst.cr_eotest.image_utils as imutils
 from .MaskedCCD import MaskedCCD
 from .EOTestResults import EOTestResults
 from .read_noise import noise_dists, NoiseDistributions

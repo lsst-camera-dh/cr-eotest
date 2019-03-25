@@ -123,7 +123,7 @@ class AmpTearingStats(object):
         ----------
         full_segment: lsst.afw.image.Image
             Image object of the full segment of an amplifier.
-        amp_geom: lsst\.cr_eotest\.sensor.AmplifierGeometry
+        amp_geom: lsst.cr_eotest.sensor.AmplifierGeometry
             Object containing the amplifier pixel geometry.
         buf: int [10]
             Number of pixels to avoid on leading and trailing edge of

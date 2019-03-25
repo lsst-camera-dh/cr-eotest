@@ -5,7 +5,7 @@ import numpy as np
 import argparse
 import lsst.afw.image as afwImage
 import lsst.afw.math as afwMath
-import lsst\.cr_eotest\.image_utils as imutils
+import lsst.cr_eotest.image_utils as imutils
 
 
 class DarkPix(object):

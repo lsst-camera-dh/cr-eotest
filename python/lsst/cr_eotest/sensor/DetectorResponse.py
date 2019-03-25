@@ -10,7 +10,7 @@ import sys
 import numpy as np
 import astropy.io.fits as fits
 import scipy.optimize
-import lsst\.cr_eotest\.image_utils as imutils
+import lsst.cr_eotest.image_utils as imutils
 import pylab
 from . import pylab_plotter as plot
 

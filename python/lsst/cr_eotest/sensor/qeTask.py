@@ -6,7 +6,7 @@
 from __future__ import absolute_import
 import os
 from . import QE
-import lsst\.cr_eotest\.image_utils as imutils
+import lsst.cr_eotest.image_utils as imutils
 import lsst.pex.config as pexConfig
 import lsst.pipe.base as pipeBase
 

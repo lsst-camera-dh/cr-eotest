@@ -9,7 +9,7 @@ import os
 from collections import OrderedDict
 import numpy as np
 import astropy.io.fits as fits
-from lsst\.cr_eotest\.fitsTools import fitsTableFactory, fitsWriteto
+from lsst.cr_eotest.fitsTools import fitsTableFactory, fitsWriteto
 
 
 class EOTestResults(object):

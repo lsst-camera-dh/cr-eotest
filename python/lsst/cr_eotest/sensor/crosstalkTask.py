@@ -4,8 +4,8 @@
 @author J. Chiang <jchiang@slac.stanford.edu>
 """
 import os
-import lsst\.cr_eotest\.image_utils as imutils
-from lsst\.cr_eotest\.sensor.crosstalk import make_crosstalk_matrix, CrosstalkMatrix
+import lsst.cr_eotest.image_utils as imutils
+from lsst.cr_eotest.sensor.crosstalk import make_crosstalk_matrix, CrosstalkMatrix
 import lsst.pex.config as pexConfig
 import lsst.pipe.base as pipeBase
 

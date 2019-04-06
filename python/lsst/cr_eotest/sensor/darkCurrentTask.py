@@ -54,10 +54,11 @@ class DarkCurrentTask(pipeBase.Task):
         dark95s = {}
         exptime = md.get('EXPTIME')
         if self.config.verbose:
-            self.log.info("Amp        95 percentile    median")
+            self.log.info("Amp        95 percentile    median**")
         dark_curr_pixels = []
         dark_curr_pixels_per_amp = {}
         for amp in ccd:
+            self.log.info("amp = %d" % amp)
             imaging_region = ccd.amp_geom.imaging
             overscan = ccd.amp_geom.serial_overscan
             image = imutils.unbias_and_trim(ccd[amp].getImage(),
@@ -69,14 +70,22 @@ class DarkCurrentTask(pipeBase.Task):
             masked = mskarr.reshape(1, mskarr.shape[0]*mskarr.shape[1])[0]
             unmasked = [pixels[i] for i in range(len(pixels)) if masked[i] == 0]
             unmasked.sort()
+#hn
+#            self.log.info("darkCurrentTask : exptime = %f" % exptime)
+#            self.log.info("darkCurrentTask : gains = "+str(gains))
+#            self.log.info("darkCurrentTask : unmasked = "+str(unmasked))
+#            self.log.info("darkCurrentTask : masked = "+str(masked))
+
             unmasked = np.array(unmasked)*gains[amp]/exptime
+#            self.log.info("darkCurrentTask : unmasked np array = "+str(unmasked))
             dark_curr_pixels_per_amp[amp] = unmasked
             dark_curr_pixels.extend(unmasked)
             try:
                 dark95s[amp] = unmasked[int(len(unmasked)*0.95)]
-                median = unmasked[len(unmasked)/2]
+                self.log.info("darkCurrentTask : dark95s[amp] = "+str(dark95s[amp]))
+                median = unmasked[int(len(unmasked)/2)]
             except IndexError as eobj:
-                print(str(eobj))
+                self.log.info(str(eobj))
                 dark95s[amp] = -1.
                 median = -1.
             if self.config.verbose:

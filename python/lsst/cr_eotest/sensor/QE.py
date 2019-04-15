@@ -159,7 +159,8 @@ class QE_Data(object):
 
     def incidentPower(self, pd_ratio_file, pixel_area=1e-10):
         # Calibration diode collecting area.
-        pd_area = float(open(pd_ratio_file).readline().split('=')[1])
+        f_pd = open(pd_ratio_file)
+        pd_area = float(f_pd.readline().split('=')[1])
         if self.logger is not None:
             self.logger.info("Using pd_ratio_file: %s" % pd_ratio_file)
             self.logger.info("pd_area = %.2e mm^2" % pd_area)
@@ -173,11 +174,13 @@ class QE_Data(object):
             power.append(pd_current/(ccd_frac(wl_nm)*sensitivity(wl_nm))
                          * pixel_area/pd_area)
         self.power = np.array(power, dtype=np.float)
+        f_pd.close()
 
     def calculate_QE(self, gains, amps=None):
         if amps is None:
             amps = imutils.allAmps()
         qe = OrderedDict()
+#        self.ccd_qe = OrderedDict()
         wlarrs = OrderedDict()
         for amp in amps:
             qe[amp] = []
@@ -199,6 +202,7 @@ class QE_Data(object):
                     #
                     nphot = self.exptime[i]*power/hnu
                     qe_value = Ne/nphot
+                    print("wl,qe_value = ",wl,qe_value)
                     if qe_value > 10.:
                         # Skip obviously out-of-range values
                         raise RuntimeError("QE value > 10")
@@ -219,8 +223,17 @@ class QE_Data(object):
         for amp in self.qe:
             self.qe_band[amp] = self.compute_band_qe(self.wlarrs[amp],
                                                      self.qe[amp])
-        self.ccd_qe = sum(self.qe.values())/len(list(self.qe.values()))
-        self.ccd_qe_band = self.compute_band_qe(self.wlarrs[1], self.ccd_qe)
+
+#            self.ccd_qe[amp] = sum(self.qe[amp])/len(self.qe[amp])
+#        self.ccd_qe_band = self.compute_band_qe(self.wlarrs[1], self.ccd_qe)
+
+        try:
+            self.ccd_qe = sum(self.qe.values())/len(list(self.qe.values()))
+            self.ccd_qe_band = self.compute_band_qe(self.wlarrs[1], self.ccd_qe)
+        except:
+            print("QE: Exception!!! wl =",wl)
+            print("qe.values = ",self.qe.values())
+            raise ValueError('QE calculation error ... see info above')
 
     def _index(self, wl, band_pass):
         indx = np.where((wl >= band_pass[0]) & (wl <= band_pass[1]))

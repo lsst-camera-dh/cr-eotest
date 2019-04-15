@@ -38,14 +38,16 @@ def generate_mask(infile, outfile, mask_plane, pixels=None, columns=None,
     for amp in pixels:
         imarr = ccd.segments[amp].image.getArray()
         for ix, iy in pixels[amp]:
-            imarr[iy][ix + prescan] = signal
+            imarr[iy][int(ix) + prescan] = signal
 
     if columns is None:
         columns = {}
     for amp in columns:
         imarr = ccd.segments[amp].image.getArray()
         for ix in columns[amp]:
-            imarr[:, ix + prescan] = signal
+#            print("ix=",ix)
+#            print("prescan=",prescan)
+            imarr[:, int(ix) + prescan] = signal
 
     if temp_mask_image is None:
         temp_mask_image = tempfile.mkstemp(suffix='.fits', dir='.')[-1]
